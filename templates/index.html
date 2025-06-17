@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة المربعات السحرية �</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-container">
+            <div class="header">
+                <h1>لعبة المربعات السحرية 🧩✨</h1>
+                <div class="character">🤖</div>
+            </div>
+            
+            <div class="game-area">
+                <canvas id="tetris" width="300" height="600"></canvas>
+                
+                <div class="side-panel">
+                    <div class="next-piece">
+                        <h3>القطعة التالية:</h3>
+                        <canvas id="nextPiece" width="120" height="120"></canvas>
+                    </div>
+                    
+                    <div class="game-stats">
+                        <div class="stat-box">
+                            <span class="emoji">🌟</span>
+                            <span id="score">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="emoji">🏆</span>
+                            <span id="level">1</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="emoji">⏱️</span>
+                            <span id="time">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <div class="control-buttons">
+                    <button id="left-btn" class="arrow-btn">←</button>
+                    <button id="rotate-btn" class="action-btn">🔄 تدوير</button>
+                    <button id="right-btn" class="arrow-btn">→</button>
+                </div>
+                <button id="down-btn" class="arrow-btn">↓</button>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="start-btn" class="main-btn">ابدأ اللعب 🎮</button>
+                <button id="pause-btn" class="secondary-btn">إيقاف ⏸️</button>
+            </div>
+            
+            <div class="instructions">
+                <p>استخدم الأزرار أو مفاتيح الأسهم للتحريك</p>
+                <p>المسافة للتدوير السريع 🔄</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/js/game.js"></script>
+</body>
+</html>
